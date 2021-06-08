@@ -1,0 +1,4517 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Questrial&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+        box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+body{
+    background: #fdfbfb;
+}
+
+header{
+    width: 90%; 
+    height: auto;  
+    margin-left: 10%;
+    background-color: #fbfbfb;
+    position: relative;
+    z-index: 3;
+}
+
+.header__container{
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin: 0px auto 0px 20px;
+    background-color: #fbfbfb;
+}
+
+.header__logo{
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.logo{
+    width: 130px;
+    flex: 1;
+    /* padding-left: 20px; */
+}
+
+.collection{
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.collection__item{
+    list-style-type: none;
+}
+
+.collection__link{
+    text-decoration: none;
+    color: #000;
+    padding: 0px 30px;
+}
+
+
+.banner{
+    width: 90%;
+    height: auto;
+    min-height: 550px;
+    background-color: #fbfbfb;
+    margin-left: auto;
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 3;
+}
+
+.banner__text{
+    width: 60%;
+    position: relative;
+}
+
+.banner__textContainer{
+    padding-left: 20px;
+    position: relative;
+}
+
+.banner__image{
+    width: 40%;  
+    position: relative;
+}
+
+.banner__imageHero{
+    width: 120%;
+    position: relative;
+    left: -170px;
+    top: 0px;
+}
+
+.banner__textPositon{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 145%;
+    letter-spacing: 1px;
+}
+
+.banner__textCalltoact{
+    font-family: 'Questrial', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 145%;
+    width: 100%;
+}
+
+.banner__textQuote{
+    width: 70%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 155%;
+    opacity: 0.6;
+}
+
+#banner__textCalltoactBtn{
+    padding: 15px 60px;
+    background: #FFB21E;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 155%;
+    color: #fff;
+    border: none;
+    margin-top: 30px;
+    box-shadow: 3px 10px 20px 0px #ffb01e8e;
+}
+
+.conic__gradient{
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.header__gradient{
+    top: -120px;
+    left: -65px;
+    width: 400px;
+    height: 400px;
+    transform: rotate(-90deg);
+    background: conic-gradient(from 180deg at 50% 50%, rgba(255, 178, 30, 0.22) 0deg, rgba(255, 255, 255, 0) 360deg);
+}
+
+.banner__gradient{
+    bottom: 0;
+    left: 340px;
+    width: 180px;
+    height: 180px;
+    background: conic-gradient(from 180deg at 50% 50%, rgba(18, 84, 255, 0.25) 0deg, rgba(18, 84, 255, 0.25) 0.04deg, rgba(255, 255, 255, 0) 360deg);
+    transform: rotate(90deg);
+}
+
+.linear__gradientBanner{
+    position: absolute;
+    top: 150px;
+    right: 40px;
+    width: 300px;
+    height: 30px;
+    background: #1254FF;
+    opacity: 0.1;
+}
+
+.pattern__dotsBanner{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 80px;
+}
+
+.ellipse__imagebanner{
+    position: absolute;
+    top:230px;
+    right: 0px;
+    width: 60px;
+}
+
+.hamburger__collection{
+    display: none;
+}
+
+.activeHamburger{
+    display: flex;
+    flex-direction: column;
+    transition: 0.7s all ease-in-out;
+    animation: dropMenu 1s linear;
+}
+
+
+@keyframes dropMenu{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.hamburger__menu{
+    display: none;
+}
+
+.hamburger__menu > i{
+    font-size: 30px;
+    margin: 50px 0px;
+}
+
+.hamburger__close{
+    display: none;
+}
+
+.hamburger__close > i{
+    font-size: 30px;
+    margin: 50px 0px;
+}
+
+/* The bannerone part of the website started */
+
+
+.bannerone{
+    width: 90%;
+    height: auto;
+    min-height: 550px;
+    background-color: #fbfbfb;
+    margin: 0 auto;
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 3;
+}
+
+.bannerone__image{
+    width: 40%;  
+    position: relative;
+}
+
+.bannerone__imageGoals{
+    position: absolute;
+    top: 50px;
+    left: 155px;
+    width: 350px;
+}
+
+.bannerone__brownlines{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 140px;
+    height: 180px;
+}
+
+.bannerone__bluelines{
+    position: absolute;
+    top: 350px;
+    left: 230%;
+    width: 90px;
+    height: 150px;
+}
+
+.bannerone__text {
+    width: 55%;
+    margin: 0 auto;
+    padding-left: 2%;
+    padding-top: 10%;
+    position: relative;
+}
+
+.bannerone__about{
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 145%;
+}
+
+.bannerone__goal {
+    font-family: 'Questrial', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 145%;
+}
+
+.bannerone__goalinformation{
+    font-family: 'DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 155%;
+}
+
+#bannerone__btn{
+    font-family: 'DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    color: #1254FF;
+    margin-top: 30px;
+    background:none;
+    border: none;
+}
+
+/* The bannertwo part of the website started */
+
+.bannertwo{
+    width: 90%;
+    height: auto;
+    min-height: 900px;
+    background-color: #fbfbfb;
+    margin: 0 auto;
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 3;
+}
+
+.bannertwo__image{
+    width: 40%;  
+    position: relative;
+}
+
+.bannertwo__bluecircle{
+    position: absolute;
+    top: 380px;
+    left: 10px;
+}
+
+.bannertwo__browncircle{
+    position: absolute;
+    top: 450px;
+    left: 910px;
+}
+
+.bannertwo__largebrowncircle{
+    position: absolute;
+    top: 650px;
+    left: 0;
+}
+ 
+.bannertwo__line{
+    position: absolute;
+    top: 40px;
+    left: 115%;
+    
+}
+
+.bannertwo__text{
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    padding-left: 250px;
+}
+
+.bannertwo__facilities{
+    font-family: 'DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 145%;    
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.bannertwo__advantagehome{
+    font-family: 'Questrial' sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 155%;
+    text-align: center;
+}
+
+.bannertwo__boxs > h1 {
+    font-family: 'DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 145%;
+}
+
+.bannertwo__simpletext{
+    font-family:' DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 155%;
+}
+
+.bannertwo__advantages{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50%, 50%;
+    grid-gap: 6em;
+    width: 85%;
+    margin: 0 auto;
+    
+    padding-top: 150px;  
+    position: absolute; 
+    padding-left: 200px;
+}
+
+
+/* The bannerthree part of the website started */
+
+
+.bannerthree{
+    width: 90%;
+    height: auto;
+    min-height: 800px;
+    background-color: #fbfbfb;
+    margin: 0 auto;
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 3; 
+}
+
+.bannerthree__image {
+    width: 40%;
+    position: relative;
+}
+
+.bannerthree__line{
+    position: absolute;
+    top: 40px;
+    left: 115%;
+}
+
+.bannerthree__orangepatterndotsimg{
+    position: absolute;
+    top: 72%;
+    left: 170%;
+}
+
+.bannerthree__patternwidthimg{
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    width: 200px;
+}
+
+.bannerthree__orangelinesimg {
+    position: absolute;
+    top: 50%;
+    left: 231%;
+}
+
+.bannerthree__spaceshead{
+    font-family: 'DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 145%;    
+    position: absolute;
+    letter-spacing: 1px;
+    top: 1%;
+    left: 48%;
+}
+
+.bannerthree__spaces{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3em;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 130px;  
+    position: absolute; 
+    padding-left: 75px;
+}
+
+
+.bannerthree__rowone {
+    background: #FFF0D2;
+}
+
+
+.bannerthree__row{
+    background: #f7f1f1;
+    position: relative;
+}
+
+
+.bannerthree__officespace{
+    font-family: 'DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+    padding-bottom: 20px;
+}
+         
+.bannerthree__simpletext{
+    font-family: 'DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 155%;
+    text-align: center;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    padding: 10px;
+}
+
+.bannerthree__officeinformation{
+    font-family: 'DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 155%;
+    padding: 12px 20px 12px 20px;
+}
+
+.bannerthree__darkyellowBtn{
+    padding: 16px 24px;
+    border-radius: 8px;
+    background: #FFB21E;
+    border: none;
+    margin: 85px 25px 20px 45px;
+}
+
+.bannerthree__membership{
+    font-family: 'DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+    padding-bottom: 20px;
+}
+
+.bannerthree__membershipinformation{
+    font-family: 'DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 155%;
+    padding: 12px 20px 12px 20px;
+
+}
+
+.bannerthree__blueBtn{
+    padding: 16px 24px;
+    border-radius: 8px;
+    background: #fff;
+    border: none;
+    margin: 30px 25px 20px 45px;
+}
+
+.bannerthree__privatedesk{
+    font-family: 'DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+
+.bannerthree__privatedeskinformation{
+    font-family: 'DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 155%;
+    padding: 5px 20px 12px 20px;
+}
+
+.bannerthree__yellowBtn{
+    padding: 16px 24px;
+    border-radius: 8px;
+    background: #fff;
+    border: none;
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin: 97px 25px 20px 45px; */
+}
+
+.bannerthree__meetingroom{
+    font-family: 'DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+    padding-bottom: 20px;
+}
+
+.bannerthree__meetingroominformation{
+    font-family: 'DM Sans' sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 155%;
+    padding: 12px 20px 12px 20px;
+}
+.bannerthree__findroomBtn{
+    padding: 16px 24px;
+    border-radius: 8px;
+    background: #fff;
+    border: none;
+    margin: 83px 25px 20px 45px;
+}
+
+/* The footer part of the website started */
+
+
+footer{
+    width: 90%;
+    height: auto;
+    min-height: 550px;
+    background-color: #fbfbfb;
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 3; 
+}
+
+
+.footer__image {
+    width: 40%;
+    position: relative;
+}
+
+.footer__patterndotsimg{
+    position: absolute;
+    left: 225%;
+    margin-top: 300px;
+}
+
+.footer__orangelinesimg{
+    position: absolute;
+    top: 5%;
+    left: 0%;
+}
+
+
+.footer__container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.footer__column {
+    width: 30%;
+    padding: 0px 10px;
+}
+
+
+.footer_row{
+    display:flex;
+    padding-top: 110px;
+}
+
+.footer__qSpace{
+    position: relative;
+    margin-bottom: 35px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 155%;
+}
+
+.footer__quicklinks {
+    position: relative;
+    margin-bottom: 35px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 155%;
+}
+
+.footer__community {
+    position: relative;
+    margin-bottom: 35px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 155%;
+}
+
+.footer__subscribe {
+    position: relative;
+    margin-bottom: 35px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 155%;
+}
+
+.footer__item {
+    list-style-type: none;
+}
+
+.footer__link{
+    display: block;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 155%;
+    color: #5c5959;
+}
+
+.socialnetwork__link{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+}
+
+.footer__email{
+    display: flex;
+    width: 250px;
+    height: 50px;
+    background:#fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.input__email{
+    margin: 3px;
+    padding: 14px;
+    background: white;
+    border: none;
+}
+
+.footer__sendemailBtn{
+    padding: 13px 22px 13px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+.footer__line {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 120px;
+}
+
+.footer__reserve{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 145%;
+}
+
+.footer__speratorimg { 
+    margin-top: 11px;
+    width: 800px;
+    height: 5px;
+}
+
+
+
+
+@media only screen and (max-width: 1000px){
+    .collection{
+        display: none;
+    }
+    .hamburger__menu{
+        display: block;
+    }
+    .hamburger__collection{
+        background: rgb(133, 128, 128);
+        list-style: none;
+        text-align: center;
+    }
+    .banner{
+        min-height: 800px;
+    }
+    .banner__textPositon{
+        font-size: 16px;
+    }
+    .banner__textCalltoact{
+        width: 120%;
+        font-size: 35px;
+    }
+    .banner__textQuote {
+        font-size: 16px;
+        width: 80%;
+    }
+    #banner__textCalltoactBtn{
+        padding: 10px 15px;
+        font-size: 13px;
+        border-radius: 4px;
+    }
+    .linear__gradientBanner{
+        width: 140px;
+        height: 13px;
+        top: 108px;
+        right: 35px;
+    }
+    .banner__imageHero{
+        width: 180%;
+        top: 20%;
+        left: -400px;
+    }
+    .banner__gradient{
+        width: 100px;
+        height: 100px;
+        top: 35%;
+        left: 160px;
+    }
+    .header__gradient{
+        width: 250px;
+        height: 350px;
+    }
+
+
+    .bannerone{
+        display: block;
+    }
+    .bannerone__imageGoals {
+        width: 250px;
+        top: 15px;
+        left: 320px;
+    }
+    .bannerone__text{
+        padding-top: 300px;
+        text-align: center;
+        width: 55%;
+        
+    }
+    .bannerone__brownlines{
+        width: 60px;
+    }
+    .bannerone__line{
+        width: 50px;
+    }
+    .bannerone__about{
+        font-size: 15px;
+    }
+    .bannerone__goal {
+        font-size: 35px;
+    }
+    .bannerone__goalinformation{
+        font-size: 16px;
+    }
+    #bannerone__btn {
+        font-size: 18px;
+        margin-top: 18px;
+    }
+
+
+
+    .bannertwo{
+        min-height: 650px;
+    }
+    .bannertwo__text{
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 100px;
+    }
+    .bannertwo__bluecircle{
+        top: 150px;
+    }
+    .bannertwo__browncircle{
+        top: 100px;
+    }
+    .bannertwo__largebrowncircle{
+        top: 400px;
+    }
+    .bannertwo__line{
+        top: 30px;
+        width: 80px;
+    }
+    .bannertwo__facilities{
+        font-size: 15px;
+    }
+    .bannertwo__advantagehome{
+        font-size: 30px;
+    }
+    .bannertwo__boxs > h1{
+        font-size: 18px;
+    }
+    .bannertwo__simpletext{
+        font-size: 12px;
+    }
+    .bannertwo__bluecircle{
+        width: 30px;
+        height: 170px;
+    }
+    .bannertwo__advantages{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 1.5em;
+        margin: 0 auto;
+        height: 50px;
+        padding-top: 80px;
+        padding-left: 100px;
+    }
+
+
+
+    .bannerthree{
+       min-height: 1200px; 
+    }
+    .bannerthree__spaces{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        width: 80%;
+        height: 1000px;
+        padding-left: 17%;
+        padding-top: 10%;
+    }
+    .bannerthree__officespace{
+        font-size: 22px;
+    }
+    .bannerthree__officeinformation{
+        font-size: 16px;
+        padding: 10px 20px 10px 20px;
+    }
+    .bannerthree__simpletext{
+        font-size: 14px;
+    }
+    .bannerthree__darkyellowBtn{
+       padding: 10px 20px;
+       border-radius: 4px;
+       margin: 92px 20px 0px 70px;
+    }
+    .bannerthree__membership{
+        font-size: 22px;
+    }
+    .bannerthree__membershipinformation{
+        font-size: 16px;
+        padding: 10px 20px 10px 20px;
+        
+    }
+    .bannerthree__blueBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__privatedesk{
+        font-size: 22px;
+    }
+    .bannerthree__privatedeskinformation{
+        font-size: 16px;
+        padding: 10px 20px 10px 20px;
+    }
+    .bannerthree__yellowBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 0px 0px 0px 0px;
+    }
+    .bannerthree__meetingroom{
+        font-size: 22px;
+    }
+    .bannerthree__meetingroominformation{
+        font-size: 16px;
+        padding: 10px 20px 10px 20px;
+    }
+    .bannerthree__findroomBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__patternwidthimg{
+        width: 150px;
+        top: 40%;
+        left: 95%;
+    }
+    .bannerthree__orangepatterndotsimg{
+        width: 120px;
+        top: 80%;
+        left: 125%;
+    }
+    .bannerthree__orangelinesimg{
+        width: 40px;
+        height: 180px;
+        left: 240%;
+    }
+
+
+
+    footer{
+        min-height: 350px;
+    }
+    .footer__conontainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer__column{
+        width: 20%;
+        padding: 0px 6px;
+    }
+
+    .footer__row{
+        padding-top: 30px;
+    }
+
+    .footer__qSpace{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .revolution {
+        font-size: 8px;
+        width: 200px;
+    }
+    .column__headpart{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .footer__link{
+        font-size: 14px;
+    }
+
+    .socialnetwork__link {
+        height: 15px;
+        width: 15px;
+    }
+
+    .footer__email {
+        width: 75px;
+        height: 20px;
+        border-radius: 4px
+    }
+
+    .input__email {
+        width: 45px;
+        height: 13px;
+        padding: 3px;
+        border: none;
+        outline: none;
+    }
+
+    .footer__sendemailBtn {
+        padding: 2px 4px 2px 4px;
+        border-radius: 4px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .footer__line {
+        margin-top: 40px;
+    }
+
+    .footer__reserve {
+        font-size: 7px;
+    }
+
+   .footer__speratorimg{
+       margin-top: 7px;
+        width: 150px;
+        height: 2px;
+    }
+    .footer__orangelinesimg{
+        width: 50px;
+    }
+    .footer__patterndotsimg{
+        width: 50px;
+        margin-top: 200px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 850px){
+    .collection{
+        display: none;
+    }
+    .hamburger__menu{
+        display: block;
+    }
+    .hamburger__collection{
+        background: rgb(133, 128, 128);
+        list-style: none;
+        text-align: center;
+    }
+    .banner{
+        min-height: 600px;
+    }
+    .banner__textPositon{
+        font-size: 16px;
+    }
+    .banner__textCalltoact{
+        width: 120%;
+        font-size: 35px;
+    }
+    .banner__textQuote {
+        font-size: 16px;
+        width: 80%;
+    }
+    #banner__textCalltoactBtn{
+        padding: 10px 15px;
+        font-size: 13px;
+        border-radius: 4px;
+    }
+    .linear__gradientBanner{
+        width: 140px;
+        height: 13px;
+        top: 108px;
+        right: 35px;
+    }
+    .banner__imageHero{
+        width: 160%;
+        top: 30%;
+        left: -250px;
+    }
+    .banner__gradient{
+        width: 60px;
+        height: 60px;
+        top: 40%;
+        left: 180px;
+    }
+    .header__gradient{
+        width: 250px;
+        height: 350px;
+    }
+
+
+    .bannerone{
+        display: block;
+    }
+    .bannerone__imageGoals {
+        width: 220px;
+        top: 15px;
+        left: 85%;
+    }
+    .bannerone__text{
+        padding-top: 265px;
+        text-align: center;
+        width: 55%;
+        height: 10%;
+    }
+    .bannerone__brownlines{
+        width: 60px;
+    }
+    .bannerone__line{
+        width: 50px;
+    }
+    .bannerone__about{
+        font-size: 15px;
+    }
+    .bannerone__goal {
+        font-size: 35px;
+    }
+    .bannerone__goalinformation{
+        font-size: 16px;
+    }
+    #bannerone__btn {
+        font-size: 18px;
+        margin-top: 18px;
+    }
+
+
+
+    .bannertwo{
+        min-height: 650px;
+    }
+    .bannertwo__text{
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 100px;
+    }
+    .bannertwo__bluecircle{
+        top: 150px;
+    }
+    .bannertwo__browncircle{
+        top: 100px;
+    }
+    .bannertwo__largebrowncircle{
+        top: 400px;
+    }
+    .bannertwo__line{
+        top: 30px;
+        width: 80px;
+    }
+    .bannertwo__facilities{
+        font-size: 15px;
+    }
+    .bannertwo__advantagehome{
+        font-size: 30px;
+    }
+    .bannertwo__boxs > h1{
+        font-size: 18px;
+    }
+    .bannertwo__simpletext{
+        font-size: 12px;
+    }
+    .bannertwo__bluecircle{
+        width: 30px;
+        height: 170px;
+    }
+    .bannertwo__advantages{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 1.5em;
+        margin: 0 auto;
+        height: 50px;
+        padding-top: 80px;
+        padding-left: 100px;
+    }
+
+
+
+    .bannerthree{
+       min-height: 1100px; 
+    }
+    .bannerthree__spaces{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        width: 85%;
+        padding-left: 7%;
+        padding-top: 10%;
+    }
+    .bannerthree__officespace{
+        font-size: 20px;
+    }
+    .bannerthree__officeinformation{
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+    }
+    .bannerthree__simpletext{
+        font-size: 12px;
+    }
+    .bannerthree__darkyellowBtn{
+       padding: 10px 20px;
+       border-radius: 4px;
+       margin: 135px 20px 0px 80px;
+    }
+    .bannerthree__membership{
+        font-size: 20px;
+    }
+    .bannerthree__membershipinformation{
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+        
+    }
+    .bannerthree__blueBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__privatedesk{
+        font-size: 20px;
+    }
+    .bannerthree__privatedeskinformation{
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+    }
+    .bannerthree__yellowBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 15px 20px 0px 10px;
+    }
+    .bannerthree__meetingroom{
+        font-size: 20px;
+    }
+    .bannerthree__meetingroominformation{
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+    }
+    .bannerthree__findroomBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__patternwidthimg{
+        width: 150px;
+        top: 40%;
+        left: 95%;
+    }
+    .bannerthree__orangepatterndotsimg{
+        width: 120px;
+        top: 80%;
+        left: 125%;
+    }
+    .bannerthree__orangelinesimg{
+        width: 40px;
+        height: 180px;
+        left: 240%;
+    }
+
+
+
+    footer{
+        min-height: 350px;
+    }
+    .footer__conontainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer__column{
+        width: 20%;
+        padding: 0px 6px;
+    }
+
+    .footer__row{
+        padding-top: 30px;
+    }
+
+    .footer__qSpace{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .revolution {
+        font-size: 8px;
+    }
+    .column__headpart{
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+
+    .footer__link{
+        font-size: 10px;
+    }
+
+    .socialnetwork__link {
+        height: 15px;
+        width: 15px;
+    }
+
+    .footer__email {
+        width: 75px;
+        height: 20px;
+        border-radius: 4px
+    }
+
+    .input__email {
+        width: 45px;
+        height: 13px;
+        padding: 3px;
+        border: none;
+        outline: none;
+    }
+
+    .footer__sendemailBtn {
+        padding: 2px 4px 2px 4px;
+        border-radius: 4px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .footer__line {
+        margin-top: 40px;
+    }
+
+    .footer__reserve {
+        font-size: 7px;
+    }
+
+   .footer__speratorimg{
+       margin-top: 7px;
+        width: 150px;
+        height: 2px;
+    }
+    .footer__orangelinesimg{
+        width: 50px;
+    }
+    .footer__patterndotsimg{
+        width: 50px;
+        margin-top: 200px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 800px){
+    .collection{
+        display: none;
+    }
+    .hamburger__menu{
+        display: block;
+    }
+    .hamburger__collection{
+        background: rgb(133, 128, 128);
+        list-style: none;
+        text-align: center;
+    }
+    .banner{
+        min-height: 500px;
+    }
+    .banner__textPositon{
+        font-size: 16px;
+    }
+    .banner__textCalltoact{
+        width: 120%;
+        font-size: 35px;
+    }
+    .banner__textQuote {
+        font-size: 16px;
+        width: 80%;
+    }
+    #banner__textCalltoactBtn{
+        padding: 10px 15px;
+        font-size: 13px;
+        border-radius: 4px;
+    }
+    .linear__gradientBanner{
+        width: 140px;
+        height: 13px;
+        top: 108px;
+        right: 35px;
+    }
+    .banner__imageHero{
+        width: 160%;
+        top: 30%;
+        left: -250px;
+    }
+    .banner__gradient{
+        width: 60px;
+        height: 60px;
+        top: 40%;
+        left: 180px;
+    }
+    .header__gradient{
+        width: 250px;
+        height: 350px;
+    }
+
+
+    .bannerone{
+        display: block;
+    }
+    .bannerone__imageGoals {
+        width: 220px;
+        top: 15px;
+        left: 210px;
+    }
+    .bannerone__text{
+        padding-top: 265px;
+        text-align: center;
+        width: 55%;
+        height: 10%;
+    }
+    .bannerone__brownlines{
+        width: 60px;
+    }
+    .bannerone__line{
+        width: 50px;
+    }
+    .bannerone__about{
+        font-size: 15px;
+    }
+    .bannerone__goal {
+        font-size: 35px;
+    }
+    .bannerone__goalinformation{
+        font-size: 16px;
+    }
+    #bannerone__btn {
+        font-size: 18px;
+        margin-top: 18px;
+    }
+
+
+
+    .bannertwo{
+        min-height: 650px;
+    }
+    .bannertwo__text{
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 100px;
+    }
+    .bannertwo__bluecircle{
+        top: 150px;
+    }
+    .bannertwo__browncircle{
+        top: 100px;
+    }
+    .bannertwo__largebrowncircle{
+        top: 400px;
+    }
+    .bannertwo__line{
+        top: 30px;
+        width: 80px;
+    }
+    .bannertwo__facilities{
+        font-size: 15px;
+    }
+    .bannertwo__advantagehome{
+        font-size: 30px;
+    }
+    .bannertwo__boxs > h1{
+        font-size: 18px;
+    }
+    .bannertwo__simpletext{
+        font-size: 12px;
+    }
+    .bannertwo__bluecircle{
+        width: 30px;
+        height: 170px;
+    }
+    .bannertwo__advantages{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 1.5em;
+        margin: 0 auto;
+        height: 50px;
+        padding-top: 80px;
+        padding-left: 100px;
+    }
+
+
+
+    .bannerthree{
+       min-height: 1100px; 
+    }
+    .bannerthree__spaces{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        width: 85%;
+        padding-left: 7%;
+        padding-top: 10%;
+    }
+    .bannerthree__officespace{
+        font-size: 20px;
+    }
+    .bannerthree__officeinformation{
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+    }
+    .bannerthree__simpletext{
+        font-size: 12px;
+    }
+    .bannerthree__darkyellowBtn{
+       padding: 10px 20px;
+       border-radius: 4px;
+       margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__membership{
+        font-size: 20px;
+    }
+    .bannerthree__membershipinformation{
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+        
+    }
+    .bannerthree__blueBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__privatedesk{
+        font-size: 20px;
+    }
+    .bannerthree__privatedeskinformation{
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+    }
+    .bannerthree__yellowBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__meetingroom{
+        font-size: 20px;
+    }
+    .bannerthree__meetingroominformation{
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+    }
+    .bannerthree__findroomBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__patternwidthimg{
+        width: 150px;
+        top: 40%;
+        left: 95%;
+    }
+    .bannerthree__orangepatterndotsimg{
+        width: 120px;
+        top: 80%;
+        left: 125%;
+    }
+    .bannerthree__orangelinesimg{
+        width: 40px;
+        height: 180px;
+        left: 240%;
+    }
+
+
+
+    footer{
+        min-height: 350px;
+    }
+    .footer__conontainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer__column{
+        width: 20%;
+        padding: 0px 6px;
+    }
+
+    .footer__row{
+        padding-top: 30px;
+    }
+
+    .footer__qSpace{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .revolution {
+        font-size: 8px;
+    }
+    .column__headpart{
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+
+    .footer__link{
+        font-size: 10px;
+    }
+
+    .socialnetwork__link {
+        height: 15px;
+        width: 15px;
+    }
+
+    .footer__email {
+        width: 75px;
+        height: 20px;
+        border-radius: 4px
+    }
+
+    .input__email {
+        width: 45px;
+        height: 13px;
+        padding: 3px;
+        border: none;
+        outline: none;
+    }
+
+    .footer__sendemailBtn {
+        padding: 2px 4px 2px 4px;
+        border-radius: 4px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .footer__line {
+        margin-top: 40px;
+    }
+
+    .footer__reserve {
+        font-size: 7px;
+    }
+
+   .footer__speratorimg{
+       margin-top: 7px;
+        width: 150px;
+        height: 2px;
+    }
+    .footer__orangelinesimg{
+        width: 50px;
+    }
+    .footer__patterndotsimg{
+        width: 50px;
+        margin-top: 200px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 700px){
+    .collection{
+        display: none;
+    }
+    .hamburger__menu{
+        display: block;
+    }
+    .hamburger__collection{
+        background: rgb(133, 128, 128);
+        list-style: none;
+        text-align: center;
+    }
+    .banner__textPositon{
+        font-size: 16px;
+    }
+    .banner__textCalltoact{
+        width: 120%;
+        font-size: 35px;
+    }
+    .banner__textQuote {
+        font-size: 16px;
+        width: 80%;
+    }
+    #banner__textCalltoactBtn{
+        padding: 10px 15px;
+        font-size: 13px;
+        border-radius: 4px;
+    }
+    .linear__gradientBanner{
+        width: 140px;
+        height: 13px;
+        top: 108px;
+        right: 35px;
+    }
+    .banner__imageHero{
+        width: 160%;
+        top: 30%;
+        left: -250px;
+    }
+    .banner__gradient{
+        width: 60px;
+        height: 60px;
+        top: 40%;
+        left: 180px;
+    }
+    .header__gradient{
+        width: 250px;
+        height: 350px;
+    }
+
+
+    .bannerone{
+        display: block;
+    }
+    .bannerone__imageGoals {
+        width: 220px;
+        top: 15px;
+        left: 210px;
+    }
+    .bannerone__text{
+        padding-top: 265px;
+        text-align: center;
+        width: 55%;
+        height: 10%;
+    }
+    .bannerone__brownlines{
+        width: 60px;
+    }
+    .bannerone__line{
+        width: 50px;
+    }
+    .bannerone__about{
+        font-size: 15px;
+    }
+    .bannerone__goal {
+        font-size: 35px;
+    }
+    .bannerone__goalinformation{
+        font-size: 16px;
+    }
+    #bannerone__btn {
+        font-size: 18px;
+        margin-top: 18px;
+    }
+
+
+
+    .bannertwo{
+        min-height: 650px;
+    }
+    .bannertwo__text{
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 100px;
+    }
+    .bannertwo__bluecircle{
+        top: 150px;
+    }
+    .bannertwo__browncircle{
+        top: 100px;
+    }
+    .bannertwo__largebrowncircle{
+        top: 400px;
+    }
+    .bannertwo__line{
+        top: 30px;
+        width: 80px;
+    }
+    .bannertwo__facilities{
+        font-size: 15px;
+    }
+    .bannertwo__advantagehome{
+        font-size: 30px;
+    }
+    .bannertwo__boxs > h1{
+        font-size: 18px;
+    }
+    .bannertwo__simpletext{
+        font-size: 12px;
+    }
+    .bannertwo__bluecircle{
+        width: 30px;
+        height: 170px;
+    }
+    .bannertwo__advantages{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 1.5em;
+        margin: 0 auto;
+        height: 50px;
+        padding-top: 80px;
+        padding-left: 100px;
+    }
+
+
+
+    .bannerthree{
+       min-height: 1200px; 
+    }
+    .bannerthree__spaces{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        width: 85%;
+        padding-left: 7%;
+        padding-top: 10%;
+    }
+    .bannerthree__officespace{
+        font-size: 20px;
+    }
+    .bannerthree__officeinformation{
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+    }
+    .bannerthree__simpletext{
+        font-size: 12px;
+    }
+    .bannerthree__darkyellowBtn{
+       padding: 10px 20px;
+       border-radius: 4px;
+       margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__membership{
+        font-size: 20px;
+    }
+    .bannerthree__membershipinformation{
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+        
+    }
+    .bannerthree__blueBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__privatedesk{
+        font-size: 20px;
+    }
+    .bannerthree__privatedeskinformation{
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+    }
+    .bannerthree__yellowBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__meetingroom{
+        font-size: 20px;
+    }
+    .bannerthree__meetingroominformation{
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+    }
+    .bannerthree__findroomBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__patternwidthimg{
+        width: 150px;
+        top: 40%;
+        left: 95%;
+    }
+    .bannerthree__orangepatterndotsimg{
+        width: 120px;
+        top: 80%;
+        left: 125%;
+    }
+    .bannerthree__orangelinesimg{
+        width: 40px;
+        height: 180px;
+        left: 240%;
+    }
+
+
+
+    footer{
+        min-height: 350px;
+    }
+    .footer__conontainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer__column{
+        width: 20%;
+        padding: 0px 6px;
+    }
+
+    .footer__row{
+        padding-top: 30px;
+    }
+
+    .footer__qSpace{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .revolution {
+        font-size: 8px;
+    }
+    .column__headpart{
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+
+    .footer__link{
+        font-size: 10px;
+    }
+
+    .socialnetwork__link {
+        height: 15px;
+        width: 15px;
+    }
+
+    .footer__email {
+        width: 75px;
+        height: 20px;
+        border-radius: 4px
+    }
+
+    .input__email {
+        width: 45px;
+        height: 13px;
+        padding: 3px;
+        border: none;
+        outline: none;
+    }
+
+    .footer__sendemailBtn {
+        padding: 2px 4px 2px 4px;
+        border-radius: 4px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .footer__line {
+        margin-top: 40px;
+    }
+
+    .footer__reserve {
+        font-size: 7px;
+    }
+
+   .footer__speratorimg{
+       margin-top: 7px;
+        width: 150px;
+        height: 2px;
+    }
+    .footer__orangelinesimg{
+        width: 50px;
+    }
+    .footer__patterndotsimg{
+        width: 50px;
+        margin-top: 200px;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 650px){
+    .header__container{
+        height: 110px;
+    }
+    .logo{
+        width: 110px;
+        height: 80px;
+    }
+    .collection{
+        display: none;
+    }
+    .hamburger__menu{
+        display: block;
+    }
+    .hamburger__collection{
+        background: rgb(133, 128, 128);
+        list-style: none;
+        text-align: center;
+    }
+    .banner {
+        min-height: 600px;
+    }
+    .banner__textContainer{
+        margin-top: 30px;
+    }
+    .banner__textPositon{
+        font-size: 15px;
+    }
+    .banner__textCalltoact{
+        width: 120%;
+        font-size: 25px;
+        line-height: 110%;
+        padding-bottom: 10px;
+        padding-top: 12px;
+    }
+    .banner__textQuote {
+        font-size: 12px;
+        width: 85%;
+    }
+    #banner__textCalltoactBtn{
+        padding: 4px 6px;
+        font-size: 5px;
+        border-radius: 3px;
+        margin-top: 20px;
+    }
+    .linear__gradientBanner{
+        width: 100px;
+        height: 6px;
+        top: 105px;
+        right: -70px;
+    }
+    .banner__imageHero{
+        width: 190%;
+        top: 35%;
+        left: -230px;
+    }
+    .pattern__dotsBanner{
+        height: 140px;
+    }
+    .ellipse__imagebanner{
+        width: 60px;
+        top: 60%;
+    }
+    .banner__gradient{
+        width: 70px;
+        height: 70px;
+        top: 45%;
+        left: 20%;
+    }
+    .header__gradient{
+        width: 250px;
+        height: 350px;
+    }
+
+
+    .bannerone{
+        display: block;
+        min-height: 550px;
+    }
+    .bannerone__imageGoals {
+        width: 200px;
+        top: 5px;
+        left: 70%;
+    }
+    .bannerone__text{
+        padding-top: 260px;
+        text-align: center;
+        width: 70%;
+        height: 10%;
+    }
+    .bannerone__brownlines{
+        width: 20px;
+        height: 100px;
+    }
+    .bannerone__line{
+        width: 50px;
+    }
+    .bannerone__about{
+        font-size: 18px;
+    }
+    .bannerone__goal {
+        font-size: 35px;
+    }
+    .bannerone__goalinformation{
+        font-size: 14px;
+    }
+    #bannerone__btn {
+        font-size: 15px;
+        margin-top: 18px;
+    }
+
+
+
+    .bannertwo{
+        min-height: 560px;
+    }
+    .bannertwo__text{
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 40px;
+    }
+    .bannertwo__bluecircle{
+        top: 170px;
+        width: 2px;
+    }
+    .bannertwo__browncircle{
+        top: 100px;
+    }
+    .bannertwo__largebrowncircle{
+        top: 350px;
+        width: 20px;
+        height: 180px;
+    }
+    .boxs__img{
+        width: 40px;
+    }
+    .bannertwo__line{
+        top: 30px;
+        width: 80px;
+        left: 98%;
+    }
+    .bannertwo__facilities{
+        font-size: 15px;
+    }
+    .bannertwo__advantagehome{
+        font-size: 22px;
+    }
+    .bannertwo__boxs > h1{
+        font-size: 15px;
+    }
+    .bannertwo__simpletext{
+        font-size: 10px;
+    }
+    .bannertwo__bluecircle{
+        width: 30px;
+        height: 170px;
+    }
+    .bannertwo__advantages{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, 1fr);
+        padding-top: 105px;
+        padding-left: 40px;
+        
+    }
+
+
+    .bannerthree{
+       min-height: 1000px; 
+    }
+    .bannerthree__spaceshead{
+        font-size: 15px;
+        left: 40%;
+    }
+    .bannerthree__line{
+        left: 92%;
+        width: 80px;
+        top: 4%;
+    }
+    .bannerthree__spaces{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 750px;
+        grid-template-rows: 50% 50%;
+        padding-left: 7%;
+        padding-top: 15%;
+        grid-gap: 1em;
+    }
+    .bannerthree__officespace{
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__officeinformation{
+        font-size: 12px;
+        padding: 4px 10px 12px 10px;
+    }
+    .bannerthree__simpletext{
+        font-size: 12px;
+        padding: 5pxpx;
+    }
+    .bannerthree__darkyellowBtn{
+       padding: 6px 14px;
+       border-radius: 4px;
+       margin: 35px 6px 0px 40px;
+       font-size: 10px;
+    }
+    .bannerthree__membership{
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__membershipinformation{
+        font-size: 12px;
+        padding: 12px 8px 0px 8px;
+        
+    }
+    .bannerthree__blueBtn{
+        padding: 5px 5px;
+        border-radius: 2px;
+        margin: 15px 6px 0px 15px;
+        font-size: 9px;
+    }
+    .bannerthree__privatedesk{
+        font-size: 16px;
+    }
+    .bannerthree__privatedeskinformation{
+        font-size: 12px;
+        padding: 4px 8px 0px 8px;
+    }
+    .bannerthree__yellowBtn{
+        padding: 7px 15px;
+        border-radius: 4px;
+        margin: 28px 6px 0px 0px;
+        font-size: 10px;
+    }
+    .bannerthree__meetingroom{
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__meetingroominformation{
+        font-size: 12px;
+        padding: 15px 8px 0px 8px;
+    }
+    .bannerthree__findroomBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__patternwidthimg{
+        width: 150px;
+        top: 44%;
+        left: 62%;
+    }
+    .bannerthree__orangepatterndotsimg{
+        width: 120px;
+        top: 85%;
+        left: 120%;
+    }
+    .bannerthree__orangelinesimg{
+        width: 40px;
+        height: 180px;
+        left: 240%;
+    }
+
+
+
+    footer{
+        min-height: 470px;
+    }
+    .footer__conontainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer__column{
+        width: 20%;
+        padding: 0px 10px 0px 0px;
+    }
+
+    .footer_row{
+        display:grid ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        width: 90%;
+        padding-top: 70px;
+        grid-gap: 2em;
+    }
+
+    .footer__qSpace{
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .revolution {
+        font-size: 10px;
+    }
+    .column__headpart{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .footer__link{
+        font-size: 12px;
+        padding-bottom: 4px;
+    }
+
+    .socialnetwork__link {
+        height: 15px;
+        width: 15px;
+    }
+
+    .footer__email {
+        width: 75px;
+        height: 20px;
+        border-radius: 4px
+    }
+
+    .input__email {
+        width: 45px;
+        height: 13px;
+        padding: 3px;
+        border: none;
+        outline: none;
+    }
+
+    .footer__sendemailBtn {
+        padding: 2px 4px 2px 4px;
+        border-radius: 4px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .footer__line {
+        margin-top: 50px;
+    }
+
+    .footer__reserve {
+        font-size: 5px;
+    }
+
+   .footer__speratorimg{
+       margin-top: 7px;
+        width: 150px;
+        height: 2px;
+    }
+    .footer__orangelinesimg{
+        width: 50px;
+    }
+    .footer__patterndotsimg{
+        width: 50px;
+        margin-top: 150px;
+    }
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 550px){
+    .header__container{
+        height: 110px;
+    }
+    .logo{
+        width: 110px;
+        height: 80px;
+    }
+    .collection{
+        display: none;
+    }
+    .hamburger__menu{
+        display: block;
+    }
+    .hamburger__collection{
+        background: rgb(133, 128, 128);
+        list-style: none;
+        text-align: center;
+    }
+    .banner {
+        min-height: 500px;
+    }
+    .banner__textContainer{
+        margin-top: 30px;
+    }
+    .banner__textPositon{
+        font-size: 15px;
+    }
+    .banner__textCalltoact{
+        width: 120%;
+        font-size: 25px;
+        line-height: 110%;
+        padding-bottom: 10px;
+        padding-top: 12px;
+    }
+    .banner__textQuote {
+        font-size: 12px;
+        width: 85%;
+    }
+    #banner__textCalltoactBtn{
+        padding: 4px 6px;
+        font-size: 5px;
+        border-radius: 3px;
+        margin-top: 20px;
+    }
+    .linear__gradientBanner{
+        width: 100px;
+        height: 6px;
+        top: 105px;
+        right: -70px;
+    }
+    .banner__imageHero{
+        width: 190%;
+        top: 35%;
+        left: -230px;
+    }
+    .pattern__dotsBanner{
+        height: 140px;
+    }
+    .ellipse__imagebanner{
+        width: 60px;
+        top: 60%;
+    }
+    .banner__gradient{
+        width: 70px;
+        height: 70px;
+        top: 45%;
+        left: 20%;
+    }
+    .header__gradient{
+        width: 250px;
+        height: 350px;
+    }
+
+
+    .bannerone{
+        display: block;
+        min-height: 550px;
+    }
+    .bannerone__imageGoals {
+        width: 200px;
+        top: 5px;
+        left: 73%;
+    }
+    .bannerone__text{
+        padding-top: 260px;
+        text-align: center;
+        width: 70%;
+        height: 10%;
+    }
+    .bannerone__brownlines{
+        width: 20px;
+        height: 100px;
+    }
+    .bannerone__line{
+        width: 50px;
+    }
+    .bannerone__about{
+        font-size: 18px;
+    }
+    .bannerone__goal {
+        font-size: 35px;
+    }
+    .bannerone__goalinformation{
+        font-size: 14px;
+    }
+    #bannerone__btn {
+        font-size: 15px;
+        margin-top: 18px;
+    }
+
+
+
+    .bannertwo{
+        min-height: 560px;
+    }
+    .bannertwo__text{
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 40px;
+    }
+    .bannertwo__bluecircle{
+        top: 170px;
+        width: 2px;
+    }
+    .bannertwo__browncircle{
+        top: 100px;
+    }
+    .bannertwo__largebrowncircle{
+        top: 350px;
+        width: 20px;
+        height: 180px;
+    }
+    .boxs__img{
+        width: 40px;
+    }
+    .bannertwo__line{
+        top: 30px;
+        width: 80px;
+        left: 98%;
+    }
+    .bannertwo__facilities{
+        font-size: 15px;
+    }
+    .bannertwo__advantagehome{
+        font-size: 22px;
+    }
+    .bannertwo__boxs > h1{
+        font-size: 15px;
+    }
+    .bannertwo__simpletext{
+        font-size: 10px;
+    }
+    .bannertwo__bluecircle{
+        width: 30px;
+        height: 170px;
+    }
+    .bannertwo__advantages{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, 1fr);
+        padding-top: 105px;
+        padding-left: 40px;
+        
+    }
+
+
+    .bannerthree{
+       min-height: 900px; 
+    }
+    .bannerthree__spaceshead{
+        font-size: 15px;
+        left: 40%;
+    }
+    .bannerthree__line{
+        left: 92%;
+        width: 80px;
+        top: 4%;
+    }
+    .bannerthree__spaces{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 750px;
+        grid-template-rows: 50% 50%;
+        padding-left: 7%;
+        padding-top: 15%;
+        grid-gap: 1em;
+    }
+    .bannerthree__officespace{
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__officeinformation{
+        font-size: 12px;
+        padding: 4px 10px 12px 10px;
+    }
+    .bannerthree__simpletext{
+        font-size: 12px;
+        padding: 5pxpx;
+    }
+    .bannerthree__darkyellowBtn{
+       padding: 6px 14px;
+       border-radius: 4px;
+       margin: 35px 6px 0px 40px;
+       font-size: 10px;
+    }
+    .bannerthree__membership{
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__membershipinformation{
+        font-size: 12px;
+        padding: 12px 8px 0px 8px;
+        
+    }
+    .bannerthree__blueBtn{
+        padding: 5px 5px;
+        border-radius: 2px;
+        margin: 15px 6px 0px 15px;
+        font-size: 9px;
+    }
+    .bannerthree__privatedesk{
+        font-size: 16px;
+    }
+    .bannerthree__privatedeskinformation{
+        font-size: 12px;
+        padding: 4px 8px 0px 8px;
+    }
+    .bannerthree__yellowBtn{
+        padding: 7px 15px;
+        border-radius: 4px;
+        margin: 28px 6px 0px 0px;
+        font-size: 10px;
+    }
+    .bannerthree__meetingroom{
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__meetingroominformation{
+        font-size: 12px;
+        padding: 15px 8px 0px 8px;
+    }
+    .bannerthree__findroomBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__patternwidthimg{
+        width: 150px;
+        top: 44%;
+        left: 62%;
+    }
+    .bannerthree__orangepatterndotsimg{
+        width: 120px;
+        top: 85%;
+        left: 120%;
+    }
+    .bannerthree__orangelinesimg{
+        width: 40px;
+        height: 180px;
+        left: 240%;
+    }
+
+
+
+    footer{
+        min-height: 470px;
+    }
+    .footer__conontainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer__column{
+        width: 20%;
+        padding: 0px 10px 0px 0px;
+    }
+
+    .footer_row{
+        display:grid ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        width: 90%;
+        padding-top: 70px;
+        grid-gap: 2em;
+    }
+
+    .footer__qSpace{
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .revolution {
+        font-size: 10px;
+    }
+    .column__headpart{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .footer__link{
+        font-size: 12px;
+        padding-bottom: 4px;
+    }
+
+    .socialnetwork__link {
+        height: 15px;
+        width: 15px;
+    }
+
+    .footer__email {
+        width: 75px;
+        height: 20px;
+        border-radius: 4px
+    }
+
+    .input__email {
+        width: 45px;
+        height: 13px;
+        padding: 3px;
+        border: none;
+        outline: none;
+    }
+
+    .footer__sendemailBtn {
+        padding: 2px 4px 2px 4px;
+        border-radius: 4px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .footer__line {
+        margin-top: 50px;
+    }
+
+    .footer__reserve {
+        font-size: 5px;
+    }
+
+   .footer__speratorimg{
+       margin-top: 7px;
+        width: 150px;
+        height: 2px;
+    }
+    .footer__orangelinesimg{
+        width: 50px;
+    }
+    .footer__patterndotsimg{
+        width: 50px;
+        margin-top: 150px;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 500px){
+    .header__container{
+        height: 110px;
+    }
+    .logo{
+        width: 80px;
+        height: 60px;
+    }
+    .collection{
+        display: none;
+    }
+    .hamburger__menu{
+        display: block;
+    }
+    .hamburger__collection{
+        background: rgb(133, 128, 128);
+        list-style: none;
+        text-align: center;
+    }
+    .banner {
+        min-height: 500px;
+    }
+    .banner__textContainer{
+        margin-top: 30px;
+    }
+    .banner__textPositon{
+        font-size: 10px;
+    }
+    .banner__textCalltoact{
+        width: 105%;
+        font-size: 18px;
+        line-height: 110%;
+        padding-bottom: 10px;
+        padding-top: 12px;
+    }
+    .banner__textQuote {
+        font-size: 8px;
+        width: 85%;
+    }
+    #banner__textCalltoactBtn{
+        padding: 4px 6px;
+        font-size: 5px;
+        border-radius: 3px;
+        margin-top: 20px;
+    }
+    .linear__gradientBanner{
+        width: 100px;
+        height: 6px;
+        top: 105px;
+        right: 35px;
+    }
+    .banner__imageHero{
+        width: 190%;
+        top: 35%;
+        left: -180px;
+    }
+    .pattern__dotsBanner{
+        height: 140px;
+    }
+    .ellipse__imagebanner{
+        width: 60px;
+        top: 60%;
+    }
+    .banner__gradient{
+        width: 40px;
+        height: 40px;
+        top: 40%;
+        left: 35px;
+    }
+    .header__gradient{
+        width: 250px;
+        height: 350px;
+    }
+
+
+    .bannerone{
+        display: block;
+        min-height: 500px;
+    }
+    .bannerone__imageGoals {
+        width: 160px;
+        top: 0px;
+        left: 65%;
+    }
+    .bannerone__text{
+        padding-top: 200px;
+        text-align: center;
+        width: 70%;
+        height: 10%;
+    }
+    .bannerone__brownlines{
+        width: 20px;
+        height: 100px;
+    }
+    .bannerone__line{
+        width: 50px;
+    }
+    .bannerone__about{
+        font-size: 14px;
+    }
+    .bannerone__goal {
+        font-size: 25px;
+    }
+    .bannerone__goalinformation{
+        font-size: 12px;
+    }
+    #bannerone__btn {
+        font-size: 14px;
+        margin-top: 18px;
+    }
+
+
+
+    .bannertwo{
+        min-height: 560px;
+    }
+    .bannertwo__text{
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 40px;
+    }
+    .bannertwo__bluecircle{
+        top: 170px;
+        width: 2px;
+    }
+    .bannertwo__browncircle{
+        top: 100px;
+    }
+    .bannertwo__largebrowncircle{
+        top: 350px;
+        width: 20px;
+        height: 180px;
+    }
+    .boxs__img{
+        width: 40px;
+    }
+    .bannertwo__line{
+        top: 30px;
+        width: 80px;
+        left: 90%;
+    }
+    .bannertwo__facilities{
+        font-size: 14px;
+    }
+    .bannertwo__advantagehome{
+        font-size: 18px;
+    }
+    .bannertwo__boxs > h1{
+        font-size: 14px;
+    }
+    .bannertwo__simpletext{
+        font-size: 8px;
+    }
+    .bannertwo__bluecircle{
+        width: 30px;
+        height: 170px;
+    }
+    .bannertwo__advantages{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, 1fr);
+        padding-top: 105px;
+        padding-left: 40px;
+        
+    }
+
+
+    .bannerthree{
+       min-height: 800px; 
+    }
+    .bannerthree__spaceshead{
+        font-size: 14px;
+        left: 40%;
+    }
+    .bannerthree__line{
+        left: 85%;
+        width: 80px;
+        top: 3.5%;
+    }
+    .bannerthree__spaces{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 750px;
+        grid-template-rows: 50% 50%;
+        padding-left: 7%;
+        padding-top: 25%;
+        grid-gap: 1em;
+    }
+    .bannerthree__officespace{
+        font-size: 13px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__officeinformation{
+        font-size: 10px;
+        padding: 4px 10px 20px 10px;
+    }
+    .bannerthree__simpletext{
+        font-size: 8px;
+        padding: 0px;
+    }
+    .bannerthree__darkyellowBtn{
+       padding: 5px 5px;
+       border-radius: 2px;
+       margin: 65px 6px 0px 30px;
+       font-size: 9px;
+    }
+    .bannerthree__membership{
+        font-size: 13px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__membershipinformation{
+        font-size: 10px;
+        padding: 12px 8px 0px 8px;
+        
+    }
+    .bannerthree__blueBtn{
+        padding: 5px 5px;
+        border-radius: 2px;
+        margin: 15px 6px 0px 15px;
+        font-size: 9px;
+    }
+    .bannerthree__privatedesk{
+        font-size: 12px;
+    }
+    .bannerthree__privatedeskinformation{
+        font-size: 10px;
+        padding: 12px 8px 0px 8px;
+    }
+    .bannerthree__yellowBtn{
+        padding: 5px 5px;
+        border-radius: 2px;
+        margin: 100px 10px 1px 0px;
+        font-size: 9px;
+    }
+    .bannerthree__meetingroom{
+        font-size: 12px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__meetingroominformation{
+       
+        font-size: 10px;
+        padding: 12px 8px 0px 8px;
+    }
+    .bannerthree__findroomBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__patternwidthimg{
+        width: 150px;
+        top: 44%;
+        left: 62%;
+    }
+    .bannerthree__orangepatterndotsimg{
+        width: 120px;
+        top: 85%;
+        left: 120%;
+    }
+    .bannerthree__orangelinesimg{
+        width: 40px;
+        height: 180px;
+        left: 240%;
+    }
+
+
+
+    footer{
+        min-height: 400px;
+    }
+    .footer__conontainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer__column{
+        width: 20%;
+        padding: 0px 10px 20px 0px;
+    }
+
+    .footer_row{
+        display:grid ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        width: 100%;
+        padding-top: 70px;
+    }
+
+    .footer__qSpace{
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .revolution {
+        font-size: 6px;
+    }
+    .column__headpart{
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+
+    .footer__link{
+        font-size: 8px;
+        padding-bottom: 4px;
+    }
+
+    .socialnetwork__link {
+        height: 15px;
+        width: 15px;
+    }
+
+    .footer__email {
+        width: 75px;
+        height: 20px;
+        border-radius: 4px
+    }
+
+    .input__email {
+        width: 45px;
+        height: 13px;
+        padding: 3px;
+        border: none;
+        outline: none;
+    }
+
+    .footer__sendemailBtn {
+        padding: 2px 4px 2px 4px;
+        border-radius: 4px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .footer__line {
+        margin-top: 1px;
+    }
+
+    .footer__reserve {
+        font-size: 5px;
+    }
+
+   .footer__speratorimg{
+       margin-top: 7px;
+        width: 150px;
+        height: 2px;
+    }
+    .footer__orangelinesimg{
+        width: 50px;
+    }
+    .footer__patterndotsimg{
+        width: 50px;
+        margin-top: 150px;
+    }
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 450px){
+    .header__container{
+        height: 110px;
+    }
+    .logo{
+        width: 80px;
+        height: 60px;
+    }
+    .collection{
+        display: none;
+    }
+    .hamburger__menu{
+        display: block;
+    }
+    .hamburger__collection{
+        background: rgb(133, 128, 128);
+        list-style: none;
+        text-align: center;
+    }
+    .banner {
+        min-height: 500px;
+    }
+    .banner__textContainer{
+        margin-top: 30px;
+    }
+    .banner__textPositon{
+        font-size: 10px;
+    }
+    .banner__textCalltoact{
+        width: 105%;
+        font-size: 18px;
+        line-height: 110%;
+        padding-bottom: 10px;
+        padding-top: 12px;
+    }
+    .banner__textQuote {
+        font-size: 8px;
+        width: 85%;
+    }
+    #banner__textCalltoactBtn{
+        padding: 4px 6px;
+        font-size: 5px;
+        border-radius: 3px;
+        margin-top: 20px;
+    }
+    .linear__gradientBanner{
+        width: 100px;
+        height: 6px;
+        top: 105px;
+        right: 35px;
+    }
+    .banner__imageHero{
+        width: 190%;
+        top: 35%;
+        left: -180px;
+    }
+    .pattern__dotsBanner{
+        height: 140px;
+    }
+    .ellipse__imagebanner{
+        width: 60px;
+        top: 60%;
+    }
+    .banner__gradient{
+        width: 40px;
+        height: 40px;
+        top: 40%;
+        left: 35px;
+    }
+    .header__gradient{
+        width: 250px;
+        height: 350px;
+    }
+
+
+    .bannerone{
+        display: block;
+        min-height: 500px;
+    }
+    .bannerone__imageGoals {
+        width: 160px;
+        top: 0px;
+        left: 65%;
+    }
+    .bannerone__text{
+        padding-top: 200px;
+        text-align: center;
+        width: 70%;
+        height: 10%;
+    }
+    .bannerone__brownlines{
+        width: 20px;
+        height: 100px;
+    }
+    .bannerone__line{
+        width: 50px;
+    }
+    .bannerone__about{
+        font-size: 14px;
+    }
+    .bannerone__goal {
+        font-size: 25px;
+    }
+    .bannerone__goalinformation{
+        font-size: 12px;
+    }
+    #bannerone__btn {
+        font-size: 14px;
+        margin-top: 18px;
+    }
+
+
+
+    .bannertwo{
+        min-height: 560px;
+    }
+    .bannertwo__text{
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 40px;
+    }
+    .bannertwo__bluecircle{
+        top: 170px;
+        width: 2px;
+    }
+    .bannertwo__browncircle{
+        top: 100px;
+    }
+    .bannertwo__largebrowncircle{
+        top: 350px;
+        width: 20px;
+        height: 180px;
+    }
+    .boxs__img{
+        width: 40px;
+    }
+    .bannertwo__line{
+        top: 30px;
+        width: 80px;
+        left: 90%;
+    }
+    .bannertwo__facilities{
+        font-size: 14px;
+    }
+    .bannertwo__advantagehome{
+        font-size: 18px;
+    }
+    .bannertwo__boxs > h1{
+        font-size: 14px;
+    }
+    .bannertwo__simpletext{
+        font-size: 8px;
+    }
+    .bannertwo__bluecircle{
+        width: 30px;
+        height: 170px;
+    }
+    .bannertwo__advantages{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, 1fr);
+        padding-top: 105px;
+        padding-left: 40px;
+        
+    }
+
+
+    .bannerthree{
+       min-height: 800px; 
+    }
+    .bannerthree__spaceshead{
+        font-size: 14px;
+        left: 40%;
+    }
+    .bannerthree__line{
+        left: 85%;
+        width: 80px;
+        top: 3.5%;
+    }
+    .bannerthree__spaces{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 750px;
+        grid-template-rows: 50% 50%;
+        padding-left: 7%;
+        padding-top: 25%;
+        grid-gap: 1em;
+    }
+    .bannerthree__officespace{
+        font-size: 13px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__officeinformation{
+        font-size: 10px;
+        padding: 4px 10px 20px 10px;
+    }
+    .bannerthree__simpletext{
+        font-size: 8px;
+        padding: 0px;
+    }
+    .bannerthree__darkyellowBtn{
+       padding: 5px 5px;
+       border-radius: 2px;
+       margin: 65px 6px 0px 30px;
+       font-size: 9px;
+    }
+    .bannerthree__membership{
+        font-size: 13px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__membershipinformation{
+        font-size: 10px;
+        padding: 12px 8px 0px 8px;
+        
+    }
+    .bannerthree__blueBtn{
+        padding: 5px 5px;
+        border-radius: 2px;
+        margin: 15px 6px 0px 15px;
+        font-size: 9px;
+    }
+    .bannerthree__privatedesk{
+        font-size: 12px;
+    }
+    .bannerthree__privatedeskinformation{
+        font-size: 10px;
+        padding: 12px 8px 0px 8px;
+    }
+    .bannerthree__yellowBtn{
+        padding: 5px 5px;
+        border-radius: 2px;
+        margin: 100px 10px 1px 0px;
+        font-size: 9px;
+    }
+    .bannerthree__meetingroom{
+        font-size: 12px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__meetingroominformation{
+       
+        font-size: 10px;
+        padding: 12px 8px 0px 8px;
+    }
+    .bannerthree__findroomBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__patternwidthimg{
+        width: 150px;
+        top: 44%;
+        left: 62%;
+    }
+    .bannerthree__orangepatterndotsimg{
+        width: 120px;
+        top: 85%;
+        left: 120%;
+    }
+    .bannerthree__orangelinesimg{
+        width: 40px;
+        height: 180px;
+        left: 240%;
+    }
+
+
+
+    footer{
+        min-height: 400px;
+    }
+    .footer__conontainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer__column{
+        width: 20%;
+        padding: 0px 10px 20px 0px;
+    }
+
+    .footer_row{
+        display:grid ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        width: 100%;
+        padding-top: 70px;
+    }
+
+    .footer__qSpace{
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .revolution {
+        font-size: 6px;
+    }
+    .column__headpart{
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+
+    .footer__link{
+        font-size: 8px;
+        padding-bottom: 4px;
+    }
+
+    .socialnetwork__link {
+        height: 15px;
+        width: 15px;
+    }
+
+    .footer__email {
+        width: 75px;
+        height: 20px;
+        border-radius: 4px
+    }
+
+    .input__email {
+        width: 45px;
+        height: 13px;
+        padding: 3px;
+        border: none;
+        outline: none;
+    }
+
+    .footer__sendemailBtn {
+        padding: 2px 4px 2px 4px;
+        border-radius: 4px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .footer__line {
+        margin-top: 1px;
+    }
+
+    .footer__reserve {
+        font-size: 5px;
+    }
+
+   .footer__speratorimg{
+       margin-top: 7px;
+        width: 150px;
+        height: 2px;
+    }
+    .footer__orangelinesimg{
+        width: 50px;
+    }
+    .footer__patterndotsimg{
+        width: 50px;
+        margin-top: 150px;
+    }
+
+
+}
+
+
+
+
+@media only screen and (max-width: 400px){
+    .header__container{
+        height: 110px;
+    }
+    .logo{
+        width: 80px;
+        height: 60px;
+    }
+    .collection{
+        display: none;
+    }
+    .hamburger__menu{
+        display: block;
+    }
+    .hamburger__collection{
+        background: rgb(133, 128, 128);
+        list-style: none;
+        text-align: center;
+    }
+    .banner {
+        min-height: 450px;
+    }
+    .banner__textContainer{
+        margin-top: 30px;
+    }
+    .banner__textPositon{
+        font-size: 10px;
+    }
+    .banner__textCalltoact{
+        width: 105%;
+        font-size: 18px;
+        line-height: 110%;
+        padding-bottom: 10px;
+        padding-top: 12px;
+    }
+    .banner__textQuote {
+        font-size: 10px;
+        width: 85%;
+    }
+    #banner__textCalltoactBtn{
+        padding: 4px 6px;
+        font-size: 5px;
+        border-radius: 3px;
+        margin-top: 20px;
+    }
+    .linear__gradientBanner{
+        width: 100px;
+        height: 6px;
+        top: 105px;
+        right: 35px;
+    }
+    .banner__imageHero{
+        width: 190%;
+        top: 40%;
+        left: -170px;
+    }
+    .pattern__dotsBanner{
+        height: 140px;
+    }
+    .ellipse__imagebanner{
+        width: 60px;
+        top: 60%;
+    }
+    .banner__gradient{
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        left: 30px;
+    }
+    .header__gradient{
+        width: 250px;
+        height: 350px;
+    }
+
+
+    .bannerone{
+        display: block;
+        min-height: 500px;
+    }
+    .bannerone__imageGoals {
+        width: 160px;
+        top: 0px;
+        left: 65%;
+    }
+    .bannerone__text{
+        padding-top: 200px;
+        text-align: center;
+        width: 70%;
+        height: 10%;
+    }
+    .bannerone__brownlines{
+        width: 20px;
+        height: 100px;
+    }
+    .bannerone__line{
+        width: 50px;
+    }
+    .bannerone__about{
+        font-size: 14px;
+    }
+    .bannerone__goal {
+        font-size: 25px;
+    }
+    .bannerone__goalinformation{
+        font-size: 12px;
+    }
+    #bannerone__btn {
+        font-size: 14px;
+        margin-top: 18px;
+    }
+
+
+
+    .bannertwo{
+        min-height: 560px;
+    }
+    .bannertwo__text{
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 40px;
+    }
+    .bannertwo__bluecircle{
+        top: 170px;
+        width: 2px;
+    }
+    .bannertwo__browncircle{
+        top: 100px;
+    }
+    .bannertwo__largebrowncircle{
+        top: 350px;
+        width: 20px;
+        height: 180px;
+    }
+    .boxs__img{
+        width: 40px;
+    }
+    .bannertwo__line{
+        top: 30px;
+        width: 80px;
+        left: 90%;
+    }
+    .bannertwo__facilities{
+        font-size: 14px;
+    }
+    .bannertwo__advantagehome{
+        font-size: 18px;
+    }
+    .bannertwo__boxs > h1{
+        font-size: 14px;
+    }
+    .bannertwo__simpletext{
+        font-size: 8px;
+    }
+    .bannertwo__bluecircle{
+        width: 30px;
+        height: 170px;
+    }
+    .bannertwo__advantages{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, 1fr);
+        padding-top: 105px;
+        padding-left: 40px;
+        
+    }
+
+
+    .bannerthree{
+       min-height: 800px; 
+    }
+    .bannerthree__spaceshead{
+        font-size: 14px;
+        left: 40%;
+    }
+    .bannerthree__line{
+        left: 85%;
+        width: 80px;
+        top: 3.5%;
+    }
+    .bannerthree__spaces{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 750px;
+        grid-template-rows: 50% 50%;
+        padding-left: 7%;
+        padding-top: 25%;
+        grid-gap: 1em;
+    }
+    .bannerthree__officespace{
+        font-size: 13px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__officeinformation{
+        font-size: 10px;
+        padding: 4px 10px 20px 10px;
+    }
+    .bannerthree__simpletext{
+        font-size: 8px;
+        padding: 0px;
+    }
+    .bannerthree__darkyellowBtn{
+       padding: 5px 5px;
+       border-radius: 2px;
+       margin: 50px 6px 0px 30px;
+       font-size: 9px;
+    }
+    .bannerthree__membership{
+        font-size: 13px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__membershipinformation{
+        font-size: 10px;
+        padding: 12px 8px 0px 8px;
+        
+    }
+    .bannerthree__blueBtn{
+        padding: 5px 5px;
+        border-radius: 2px;
+        margin: 15px 6px 0px 15px;
+        font-size: 9px;
+    }
+    .bannerthree__privatedesk{
+        font-size: 12px;
+    }
+    .bannerthree__privatedeskinformation{
+        font-size: 10px;
+        padding: 12px 8px 0px 8px;
+    }
+    .bannerthree__yellowBtn{
+        padding: 5px 5px;
+        border-radius: 2px;
+        margin: 100px 10px 1px 0px;
+        font-size: 9px;
+    }
+    .bannerthree__meetingroom{
+        font-size: 12px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__meetingroominformation{
+       
+        font-size: 10px;
+        padding: 12px 8px 0px 8px;
+    }
+    .bannerthree__findroomBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__patternwidthimg{
+        width: 150px;
+        top: 44%;
+        left: 62%;
+    }
+    .bannerthree__orangepatterndotsimg{
+        width: 120px;
+        top: 85%;
+        left: 120%;
+    }
+    .bannerthree__orangelinesimg{
+        width: 40px;
+        height: 180px;
+        left: 240%;
+    }
+
+
+
+    footer{
+        min-height: 400px;
+    }
+    .footer__conontainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer__column{
+        width: 20%;
+        padding: 0px 10px 20px 0px;
+    }
+
+    .footer_row{
+        display:grid ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        width: 100%;
+        padding-top: 70px;
+    }
+
+    .footer__qSpace{
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .revolution {
+        font-size: 6px;
+    }
+    .column__headpart{
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+
+    .footer__link{
+        font-size: 8px;
+        padding-bottom: 4px;
+    }
+
+    .socialnetwork__link {
+        height: 15px;
+        width: 15px;
+    }
+
+    .footer__email {
+        width: 75px;
+        height: 20px;
+        border-radius: 4px
+    }
+
+    .input__email {
+        width: 45px;
+        height: 13px;
+        padding: 3px;
+        border: none;
+        outline: none;
+    }
+
+    .footer__sendemailBtn {
+        padding: 2px 4px 2px 4px;
+        border-radius: 4px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .footer__line {
+        margin-top: 1px;
+    }
+
+    .footer__reserve {
+        font-size: 5px;
+    }
+
+   .footer__speratorimg{
+       margin-top: 7px;
+        width: 150px;
+        height: 2px;
+    }
+    .footer__orangelinesimg{
+        width: 50px;
+    }
+    .footer__patterndotsimg{
+        width: 50px;
+        margin-top: 150px;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 350px){
+    .header__container{
+        height: 110px;
+    }
+    .logo{
+        width: 80px;
+        height: 60px;
+    }
+    .collection{
+        display: none;
+    }
+    .hamburger__menu{
+        display: block;
+    }
+    .hamburger__collection{
+        background: rgb(133, 128, 128);
+        list-style: none;
+        text-align: center;
+    }
+    .banner {
+        min-height: 450px;
+    }
+    .banner__textContainer{
+        margin-top: 30px;
+    }
+    .banner__textPositon{
+        font-size: 10px;
+    }
+    .banner__textCalltoact{
+        width: 105%;
+        font-size: 18px;
+        line-height: 110%;
+        padding-bottom: 10px;
+        padding-top: 12px;
+    }
+    .banner__textQuote {
+        font-size: 8px;
+        width: 85%;
+    }
+    #banner__textCalltoactBtn{
+        padding: 4px 6px;
+        font-size: 5px;
+        border-radius: 3px;
+        margin-top: 20px;
+    }
+    .linear__gradientBanner{
+        width: 100px;
+        height: 6px;
+        top: 105px;
+        right: 35px;
+    }
+    .banner__imageHero{
+        width: 190%;
+        top: 55%;
+        left: -150px;
+    }
+    .pattern__dotsBanner{
+        height: 140px;
+    }
+    .ellipse__imagebanner{
+        width: 60px;
+        top: 60%;
+    }
+    .banner__gradient{
+        width: 40px;
+        height: 40px;
+        top: 60%;
+        left: 30px;
+    }
+    .header__gradient{
+        width: 250px;
+        height: 350px;
+    }
+
+
+    .bannerone{
+        display: block;
+        min-height: 500px;
+    }
+    .bannerone__imageGoals {
+        width: 160px;
+        top: 0px;
+        left: 50%;
+    }
+    .bannerone__text{
+        padding-top: 200px;
+        text-align: center;
+        width: 70%;
+        height: 10%;
+    }
+    .bannerone__brownlines{
+        width: 20px;
+        height: 100px;
+    }
+    .bannerone__line{
+        width: 50px;
+    }
+    .bannerone__about{
+        font-size: 14px;
+    }
+    .bannerone__goal {
+        font-size: 25px;
+    }
+    .bannerone__goalinformation{
+        font-size: 12px;
+    }
+    #bannerone__btn {
+        font-size: 14px;
+        margin-top: 18px;
+    }
+
+
+
+    .bannertwo{
+        min-height: 560px;
+    }
+    .bannertwo__text{
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 40px;
+    }
+    .bannertwo__bluecircle{
+        top: 170px;
+        width: 2px;
+    }
+    .bannertwo__browncircle{
+        top: 100px;
+    }
+    .bannertwo__largebrowncircle{
+        top: 350px;
+        width: 20px;
+        height: 180px;
+    }
+    .boxs__img{
+        width: 40px;
+    }
+    .bannertwo__line{
+        top: 30px;
+        width: 80px;
+        left: 90%;
+    }
+    .bannertwo__facilities{
+        font-size: 14px;
+    }
+    .bannertwo__advantagehome{
+        font-size: 18px;
+    }
+    .bannertwo__boxs > h1{
+        font-size: 14px;
+    }
+    .bannertwo__simpletext{
+        font-size: 8px;
+    }
+    .bannertwo__bluecircle{
+        width: 30px;
+        height: 170px;
+    }
+    .bannertwo__advantages{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, 1fr);
+        padding-top: 105px;
+        padding-left: 40px;
+        
+    }
+
+
+    .bannerthree{
+       min-height: 800px; 
+    }
+    .bannerthree__spaceshead{
+        font-size: 14px;
+        left: 40%;
+    }
+    .bannerthree__line{
+        left: 85%;
+        width: 80px;
+        top: 3.5%;
+    }
+    .bannerthree__spaces{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 750px;
+        grid-template-rows: 50% 50%;
+        padding-left: 7%;
+        padding-top: 25%;
+        grid-gap: 1em;
+    }
+    .bannerthree__officespace{
+        font-size: 13px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__officeinformation{
+        font-size: 10px;
+        padding: 4px 10px 20px 10px;
+    }
+    .bannerthree__simpletext{
+        font-size: 8px;
+        padding: 0px;
+    }
+    .bannerthree__darkyellowBtn{
+       padding: 5px 5px;
+       border-radius: 2px;
+       margin: 40px 6px 0px 15px;
+       font-size: 9px;
+    }
+    .bannerthree__membership{
+        font-size: 13px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__membershipinformation{
+        font-size: 10px;
+        padding: 12px 8px 0px 8px;
+        
+    }
+    .bannerthree__blueBtn{
+        padding: 5px 5px;
+        border-radius: 2px;
+        margin: 15px 6px 0px 15px;
+        font-size: 9px;
+    }
+    .bannerthree__privatedesk{
+        font-size: 12px;
+    }
+    .bannerthree__privatedeskinformation{
+        font-size: 10px;
+        padding: 12px 8px 0px 8px;
+    }
+    .bannerthree__yellowBtn{
+        padding: 5px 5px;
+        border-radius: 2px;
+        margin: 100px 10px 1px 0px;
+        font-size: 9px;
+    }
+    .bannerthree__meetingroom{
+        font-size: 12px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__meetingroominformation{
+       
+        font-size: 10px;
+        padding: 12px 8px 0px 8px;
+    }
+    .bannerthree__findroomBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__patternwidthimg{
+        width: 150px;
+        top: 44%;
+        left: 62%;
+    }
+    .bannerthree__orangepatterndotsimg{
+        width: 120px;
+        top: 85%;
+        left: 120%;
+    }
+    .bannerthree__orangelinesimg{
+        width: 40px;
+        height: 180px;
+        left: 240%;
+    }
+
+
+
+    footer{
+        min-height: 400px;
+    }
+    .footer__conontainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer__column{
+        width: 20%;
+        padding: 0px 10px 20px 0px;
+    }
+
+    .footer_row{
+        display:grid ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        width: 100%;
+        padding-top: 70px;
+    }
+
+    .footer__qSpace{
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .revolution {
+        font-size: 6px;
+    }
+    .column__headpart{
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+
+    .footer__link{
+        font-size: 8px;
+        padding-bottom: 4px;
+    }
+
+    .socialnetwork__link {
+        height: 15px;
+        width: 15px;
+    }
+
+    .footer__email {
+        width: 75px;
+        height: 20px;
+        border-radius: 4px
+    }
+
+    .input__email {
+        width: 45px;
+        height: 13px;
+        padding: 3px;
+        border: none;
+        outline: none;
+    }
+
+    .footer__sendemailBtn {
+        padding: 2px 4px 2px 4px;
+        border-radius: 4px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .footer__line {
+        margin-top: 1px;
+    }
+
+    .footer__reserve {
+        font-size: 5px;
+    }
+
+   .footer__speratorimg{
+       margin-top: 7px;
+        width: 150px;
+        height: 2px;
+    }
+    .footer__orangelinesimg{
+        width: 50px;
+    }
+    .footer__patterndotsimg{
+        width: 50px;
+        margin-top: 150px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 280px){
+    .header__container{
+        height: 110px;
+    }
+    .logo{
+        width: 80px;
+        height: 60px;
+    }
+    .collection{
+        display: none;
+    }
+    .hamburger__menu{
+        display: block;
+    }
+    .hamburger__collection{
+        background: rgb(133, 128, 128);
+        list-style: none;
+        text-align: center;
+    }
+    .banner {
+        min-height: 400px;
+    }
+    .banner__textContainer{
+        margin-top: 30px;
+    }
+    .banner__textPositon{
+        font-size: 10px;
+    }
+    .banner__textCalltoact{
+        width: 105%;
+        font-size: 18px;
+        line-height: 110%;
+        padding-bottom: 10px;
+        padding-top: 12px;
+    }
+    .banner__textQuote {
+        font-size: 8px;
+        width: 85%;
+    }
+    #banner__textCalltoactBtn{
+        padding: 4px 6px;
+        font-size: 5px;
+        border-radius: 3px;
+        margin-top: 20px;
+    }
+    .linear__gradientBanner{
+        width: 100px;
+        height: 6px;
+        top: 105px;
+        right: 35px;
+    }
+    .banner__imageHero{
+        width: 190%;
+        top: 55%;
+        left: -150px;
+    }
+    .pattern__dotsBanner{
+        height: 140px;
+    }
+    .ellipse__imagebanner{
+        width: 60px;
+        top: 60%;
+    }
+    .banner__gradient{
+        width: 40px;
+        height: 40px;
+        top: 60%;
+        left: 30px;
+    }
+    .header__gradient{
+        width: 250px;
+        height: 350px;
+    }
+
+
+    .bannerone{
+        display: block;
+        min-height: 500px;
+    }
+    .bannerone__imageGoals {
+        width: 160px;
+        top: 0px;
+        left: 35px;
+    }
+    .bannerone__text{
+        padding-top: 200px;
+        text-align: center;
+        width: 70%;
+        height: 10%;
+    }
+    .bannerone__brownlines{
+        width: 20px;
+        height: 100px;
+    }
+    .bannerone__line{
+        width: 50px;
+    }
+    .bannerone__about{
+        font-size: 14px;
+    }
+    .bannerone__goal {
+        font-size: 25px;
+    }
+    .bannerone__goalinformation{
+        font-size: 12px;
+    }
+    #bannerone__btn {
+        font-size: 14px;
+        margin-top: 18px;
+    }
+
+
+
+    .bannertwo{
+        min-height: 560px;
+    }
+    .bannertwo__text{
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 40px;
+    }
+    .bannertwo__bluecircle{
+        top: 170px;
+        width: 2px;
+    }
+    .bannertwo__browncircle{
+        top: 100px;
+    }
+    .bannertwo__largebrowncircle{
+        top: 350px;
+        width: 20px;
+        height: 180px;
+    }
+    .boxs__img{
+        width: 40px;
+    }
+    .bannertwo__line{
+        top: 30px;
+        width: 80px;
+        left: 90%;
+    }
+    .bannertwo__facilities{
+        font-size: 14px;
+    }
+    .bannertwo__advantagehome{
+        font-size: 18px;
+    }
+    .bannertwo__boxs > h1{
+        font-size: 14px;
+    }
+    .bannertwo__simpletext{
+        font-size: 8px;
+    }
+    .bannertwo__bluecircle{
+        width: 30px;
+        height: 170px;
+    }
+    .bannertwo__advantages{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, 1fr);
+        padding-top: 105px;
+        padding-left: 40px;
+        
+    }
+
+
+    .bannerthree{
+       min-height: 800px; 
+    }
+    .bannerthree__spaceshead{
+        font-size: 14px;
+        left: 40%;
+    }
+    .bannerthree__line{
+        left: 85%;
+        width: 80px;
+        top: 3.5%;
+    }
+    .bannerthree__spaces{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 750px;
+        grid-template-rows: 50% 50%;
+        padding-left: 7%;
+        padding-top: 25%;
+        grid-gap: 1em;
+    }
+    .bannerthree__officespace{
+        font-size: 13px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__officeinformation{
+        font-size: 10px;
+        padding: 4px 10px 20px 10px;
+    }
+    .bannerthree__simpletext{
+        font-size: 8px;
+        padding: 0px;
+    }
+    .bannerthree__darkyellowBtn{
+       padding: 5px 5px;
+       border-radius: 2px;
+       margin: 15px 6px 0px 15px;
+       font-size: 9px;
+    }
+    .bannerthree__membership{
+        font-size: 13px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__membershipinformation{
+        font-size: 10px;
+        padding: 12px 8px 0px 8px;
+        
+    }
+    .bannerthree__blueBtn{
+        padding: 5px 5px;
+        border-radius: 2px;
+        margin: 15px 6px 0px 15px;
+        font-size: 9px;
+    }
+    .bannerthree__privatedesk{
+        font-size: 12px;
+    }
+    .bannerthree__privatedeskinformation{
+        font-size: 10px;
+        padding: 12px 8px 0px 8px;
+    }
+    .bannerthree__yellowBtn{
+        padding: 5px 5px;
+        border-radius: 2px;
+        margin: 100px 10px 1px 0px;
+        font-size: 9px;
+    }
+    .bannerthree__meetingroom{
+        font-size: 12px;
+        padding-bottom: 0px;
+    }
+    .bannerthree__meetingroominformation{
+       
+        font-size: 10px;
+        padding: 12px 8px 0px 8px;
+    }
+    .bannerthree__findroomBtn{
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin: 25px 20px 0px 40px;
+    }
+    .bannerthree__patternwidthimg{
+        width: 150px;
+        top: 44%;
+        left: 62%;
+    }
+    .bannerthree__orangepatterndotsimg{
+        width: 120px;
+        top: 85%;
+        left: 120%;
+    }
+    .bannerthree__orangelinesimg{
+        width: 40px;
+        height: 180px;
+        left: 240%;
+    }
+
+
+
+    footer{
+        min-height: 400px;
+    }
+    .footer__conontainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer__column{
+        width: 20%;
+        padding: 0px 10px 20px 0px;
+    }
+
+    .footer_row{
+        display:grid ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        width: 100%;
+        padding-top: 70px;
+    }
+
+    .footer__qSpace{
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .revolution {
+        font-size: 6px;
+    }
+    .column__headpart{
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+
+    .footer__link{
+        font-size: 8px;
+        padding-bottom: 4px;
+    }
+
+    .socialnetwork__link {
+        height: 15px;
+        width: 15px;
+    }
+
+    .footer__email {
+        width: 75px;
+        height: 20px;
+        border-radius: 4px
+    }
+
+    .input__email {
+        width: 45px;
+        height: 13px;
+        padding: 3px;
+        border: none;
+        outline: none;
+    }
+
+    .footer__sendemailBtn {
+        padding: 2px 4px 2px 4px;
+        border-radius: 4px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .footer__line {
+        margin-top: 1px;
+    }
+
+    .footer__reserve {
+        font-size: 5px;
+    }
+
+   .footer__speratorimg{
+       margin-top: 7px;
+        width: 150px;
+        height: 2px;
+    }
+    .footer__orangelinesimg{
+        width: 50px;
+    }
+    .footer__patterndotsimg{
+        width: 50px;
+        margin-top: 150px;
+    }
+
+
+}
+
+
+
